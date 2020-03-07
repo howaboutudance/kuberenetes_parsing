@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: basicreader
+spec:
+  selector:
+    matchLabels:
+      app: kube_play
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kube_play
+    spec:
+      containers:
+        - name: scalaprint
+          image: hematite/scalaprint
+          imagePullPolicy: Never
