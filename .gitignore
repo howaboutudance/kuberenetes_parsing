@@ -1,0 +1,7 @@
+venv37/*
+venv38/*
+project/project/*
+project/target/*
+target/*
+.bloop/*
+.metals/*
